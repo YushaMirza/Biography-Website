@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nobel Laureates Gallery</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+        <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
+    <link rel="stylesheet" href="Assets/CSS/gallery_new.css">
+    <style>
+    .certificate-plaque p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.7rem;
+        line-height: 1.6;
+        letter-spacing: 0.01em;
+        margin-bottom: 0;
+        white-space: normal;
+        word-break: break-word;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="announcement-bar">
+        <span>Grand Opening - Explore our stories of greatness</span>
+    </div>
+
+    <div class="fullheader">
+            <div class="header-wrapper">
+                <div class="header">
+                    <div class="quote-container">
+                        <div class="quote active">The World's Most Prestigious Award for Excellence.</div>
+                        <div class="quote next">Celebrating brilliance that reshapes the world since 1901.</div>
+                    </div>
+                    <div class="logo">
+                        <img src="Assets/Images/Icons/logo.png" alt="Logo" />
+                    </div>
+                    <div class="account-icon">
+                        <img src="Assets/Images/Icons/user.png" alt="Account Icon" />
+                    </div>
+                    <button class="sidebar-toggle" onclick="toggleSidebar(this)">
+                        <div class="hamburger">
+                            <div class="hamburger-line"></div>
+                            <div class="hamburger-line"></div>
+                            <div class="hamburger-line"></div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="home_page.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" onclick="opendropdown()">Laureates</a>
+                        <div class="dropdown-content" id="dropdown-content">
+                            <a href="detail_page_new.html?name=Albert Einstein">Albert Einstein</a>
+                            <a href="detail_page_new.html?name=Marie Skłodowska Curie">Marie Curie</a>
+                            <a href="detail_page_new.html?name=John Bardeen">John Bardeen</a>
+                            <a href="detail_page_new.html?name=Linus Carl Pauling">Linus Pauling</a>
+                            <a href="detail_page_new.html?name=Malala Yousafzai">Malala Yousafzai</a>
+                            <a href="detail_page_new.html?name=Nelson Rolihlahla Mandela">Nelson Mandela</a>
+                            <a href="detail_page_new.html?name=Mother Teresa">Mother Teresa</a>
+                            <a href="detail_page_new.html?name=Sir Joseph John Thomson">J.J. Thomson</a>
+                        </div>
+                    </li>
+                    <li><a href="gallery_new.html">Gallery</a></li>
+                    <li><a href="about_page.html">About</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    <div id="mobileSidebar" class="mobile-sidebar">
+        <ul>
+            <li><a href="home_page.html">Home</a></li>
+            <li class="mobile-dropdown">
+                <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown(this)">
+                    Laureates
+                </div>
+                <div class="mobile-dropdown-content">
+                    <a href="detail_page_new.html?name=Albert Einstein">Albert Einstein</a>
+                    <a href="detail_page_new.html?name=Marie Skłodowska Curie">Marie Curie</a>
+                    <a href="detail_page_new.html?name=John Bardeen">John Bardeen</a>
+                    <a href="detail_page_new.html?name=Linus Carl Pauling">Linus Pauling</a>
+                    <a href="detail_page_new.html?name=Malala Yousafzai">Malala Yousafzai</a>
+                    <a href="detail_page_new.html?name=Nelson Rolihlahla Mandela">Nelson Mandela</a>
+                    <a href="detail_page_new.html?name=Mother Teresa">Mother Teresa</a>
+                    <a href="detail_page_new.html?name=Sir Joseph John Thomson">J.J. Thomson</a>
+                </div>
+            </li>
+            <li><a href="gallery_new.html">Gallery</a></li>
+            <li><a href="about_page.html">About</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </div>
+    
+    <section class="nobel-banner">
+        <div class="banner-backdrop">
+            <div class="banner-overlay"></div>
+        </div>
+
+        <div class="banner-content">
+            <h1 class="banner-title">
+                <span class="title-part">Nobel Laureates</span>
+                <span class="title-part">Gallery</span>
+            </h1>
+
+            <div class="banner-divider">
+                <div class="divider-line"></div>
+                <div class="divider-medal">▼</div>
+                <div class="divider-line"></div>
+            </div>
+
+            <p class="banner-subtitle">Celebrating Excellence in Human Achievement</p>
+
+            <button class="banner-cta" onclick= location.href="#gallery">
+                Explore Gallery
+                <svg class="cta-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <div class="luxury-container" id="gallery">
+        <div class="gallery-header text-center">
+            <h1 class="display-4">Nobel Laureates Gallery</h1>
+            <p class="lead">Celebrating Excellence in Human Achievement</p>
+            <div class="header-divider"></div>
+        </div>
+
+        <div class="row g-4 nobel-gallery">
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="luxury-card">
+                    <div class="card-frame">
+                        <div class="card-image">
+                            <div class="image-overlay"></div>
+                            <img src="Assets/Images/Winners/albert-gallery4.jpg" alt="Albert Einstein" class="img-portrait">
+                        </div>
+                        <div class="gold-overlay">
+                            <div class="laureate-info">
+                                <h3>Albert Einstein</h3>
+                                <div class="prize-meta">
+                                    <span class="category">Physics</span>
+                                    <span class="year">1921</span>
+                                </div>
+                                <button class="btn btn-luxury" onclick="location.href='laureate_gallery.html?name=einstein'">View Laureate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="luxury-card">
+                    <div class="card-frame">
+                        <div class="card-image">
+                            <div class="image-overlay"></div>
+                            <img src="Assets/Images/Winners/marie-gallery3.png" alt="Marie Curie" class="img-portrait">
+                        </div>
+                        <div class="gold-overlay">
+                            <div class="laureate-info">
+                                <h3>Marie Curie</h3>
+                                <div class="prize-meta">
+                                    <span class="category">Physics & Chemistry</span>
+                                    <span class="year">1903, 1911</span>
+                                </div>
+                                <button class="btn btn-luxury" onclick="location.href='laureate_gallery.html?name=curie'">View Laureate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="luxury-card">
+                    <div class="card-frame">
+                        <div class="card-image">
+                            <div class="image-overlay"></div>
+                            <img src="Assets/Images/Winners/john-gallery2.jpg" alt="John Bardeen" class="img-portrait">
+                        </div>
+                        <div class="gold-overlay">
+                            <div class="laureate-info">
+                                <h3>John Bardeen</h3>
+                                <div class="prize-meta">
+                                    <span class="category">Physics</span>
+                                    <span class="year">1956</span>
+                                </div>
+                                <button class="btn btn-luxury" onclick="location.href='laureate_gallery.html?name=bardeen'">View Laureate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="luxury-card">
+                    <div class="card-frame">
+                        <div class="card-image">
+                            <div class="image-overlay"></div>
+                            <img src="Assets/Images/Winners/linus-gallery4.jpg" alt="Linus Pauling" class="img-portrait">
+                        </div>
+                        <div class="gold-overlay">
+                            <div class="laureate-info">
+                                <h3>Linus Pauling</h3>
+                                <div class="prize-meta">
+                                    <span class="category">Chemistry & Peace</span>
+                                    <span class="year">1954, 1962</span>
+                                </div>
+                                <button class="btn btn-luxury" onclick="location.href='laureate_gallery.html?name=pauling'">View Laureate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="luxury-card">
+                    <div class="card-frame">
+                        <div class="card-image">
+                            <div class="image-overlay"></div>
+                            <img src="Assets/Images/Winners/malala-gallery3.jpg" alt="Malala Yousafzai" class="img-portrait">
+                        </div>
+                        <div class="gold-overlay">
+                            <div class="laureate-info">
+                                <h3>Malala Yousafzai</h3>
+                                <div class="prize-meta">
+                                    <span class="category">Peace</span>
+                                    <span class="year">2014</span>
+                                </div>
+                                <button class="btn btn-luxury" onclick="location.href='laureate_gallery.html?name=malala'">View Laureate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="luxury-card">
+                    <div class="card-frame">
+                        <div class="card-image">
+                            <div class="image-overlay"></div>
+                            <img src="Assets/Images/Winners/nelson-gallery1.jpg" alt="Nelson Mandela" class="img-portrait">
+                        </div>
+                        <div class="gold-overlay">
+                            <div class="laureate-info">
+                                <h3>Nelson Mandela</h3>
+                                <div class="prize-meta">
+                                    <span class="category">Peace</span>
+                                    <span class="year">1993</span>
+                                </div>
+                                <button class="btn btn-luxury" onclick="location.href='laureate_gallery.html?name=nelson'">View Laureate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="luxury-card">
+                    <div class="card-frame">
+                        <div class="card-image">
+                            <div class="image-overlay"></div>
+                            <img src="Assets/Images/Winners/teresa.jpg" alt="Mother Teresa" class="img-portrait">
+                        </div>
+                        <div class="gold-overlay">
+                            <div class="laureate-info">
+                                <h3>Mother Teresa</h3>
+                                <div class="prize-meta">
+                                    <span class="category">Peace</span>
+                                    <span class="year">1979</span>
+                                </div>
+                                <button class="btn btn-luxury" onclick="location.href='laureate_gallery.html?name=teresa'">View Laureate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="luxury-card">
+                    <div class="card-frame">
+                        <div class="card-image">
+                            <div class="image-overlay"></div>
+                            <img src="Assets/Images/Winners/jjthomson.png" alt="J.J. Thomson" class="img-portrait">
+                        </div>
+                        <div class="gold-overlay">
+                            <div class="laureate-info">
+                                <h3>J.J. Thomson</h3>
+                                <div class="prize-meta">
+                                    <span class="category">Physics</span>
+                                    <span class="year">1906</span>
+                                </div>
+                                <button class="btn btn-luxury" onclick="location.href='laureate_gallery.html?name=jjthomson'">View Laureate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="certificates-gallery">
+        <h2 class="section-title">Certifications</h2>
+        <div class="certificates-container" style="align-items: start;">
+            <div class="certificate-item">
+                <div class="royal-certificate-frame">
+                    <div class="certificate-image">
+                        <img src="Assets/Images/Certificates/certificate-albert.png" alt="Einstein's Nobel Certificate" class="certificate-img">
+                        <div class="certificate-overlay">
+                            <h3>Albert Einstein</h3>
+                            <p class="certificate-category">Physics · 1921</p>
+                        </div>
+                    </div>
+                    <div class="certificate-plaque">
+                        <p>Photoelectric effect<br>Quantum leap</p>
+                    </div>
+                </div>
+            </div>
+            <div class="certificate-item">
+                <div class="royal-certificate-frame">
+                    <div class="certificate-image">
+                        <img src="Assets/Images/Certificates/certificate-marie.png" alt="Curie's Nobel Certificate" class="certificate-img">
+                        <div class="certificate-overlay">
+                            <h3>Marie Curie</h3>
+                            <p class="certificate-category">Physics · 1903</p>
+                        </div>
+                    </div>
+                    <div class="certificate-plaque">
+                        <p>Radioactivity pioneer<br>New elements found</p>
+                    </div>
+                </div>
+            </div>
+            <div class="certificate-item">
+                <div class="royal-certificate-frame">
+                    <div class="certificate-image">
+                        <img src="Assets/Images/Certificates/certificate-john.png" alt="Bardeen's Nobel Certificate" class="certificate-img certificate-img-john">
+                        <div class="certificate-overlay">
+                            <h3>John Bardeen</h3>
+                            <p class="certificate-category">Physics · 1956</p>
+                        </div>
+                    </div>
+                    <div class="certificate-plaque">
+                        <p>Semiconductor work<br>Transistor co-inventor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="certificate-item">
+                <div class="royal-certificate-frame">
+                    <div class="certificate-image">
+                        <img src="Assets/Images/Certificates/certificate-linus.png" alt="Pauling's Nobel Certificate" class="certificate-img">
+                        <div class="certificate-overlay">
+                            <h3>Linus Pauling</h3>
+                            <p class="certificate-category">Chemistry · 1954</p>
+                        </div>
+                    </div>
+                    <div class="certificate-plaque">
+                        <p>Chemical bonds<br>Peace advocate</p>
+                    </div>
+                </div>
+            </div>
+            <div class="certificate-item">
+                <div class="royal-certificate-frame">
+                    <div class="certificate-image">
+                        <img src="Assets/Images/Certificates/certificate-malala.png" alt="Malala's Nobel Certificate" class="certificate-img">
+                        <div class="certificate-overlay">
+                            <h3>Malala Yousafzai</h3>
+                            <p class="certificate-category">Peace · 2014</p>
+                        </div>
+                    </div>
+                    <div class="certificate-plaque">
+                        <p>Education advocate<br>Youngest laureate</p>
+                    </div>
+                </div>
+            </div>
+            <div class="certificate-item">
+                <div class="royal-certificate-frame">
+                    <div class="certificate-image">
+                        <img src="Assets/Images/Certificates/certificate-nelson.png" alt="Nelson Mandela's Nobel Certificate" class="certificate-img certificate-img-nelson">
+                        <div class="certificate-overlay">
+                            <h3>Nelson Mandela</h3>
+                            <p class="certificate-category">Peace · 1993</p>
+                        </div>
+                    </div>
+                    <div class="certificate-plaque">
+                        <p>Anti-apartheid leader<br>Symbol of freedom</p>
+                    </div>
+                </div>
+            </div>
+            <div class="certificate-item">
+                <div class="royal-certificate-frame">
+                    <div class="certificate-image">
+                        <img src="Assets/Images/Certificates/certificate-teresa.png" alt="Mother Teresa's Nobel Certificate" class="certificate-img certificate-img-teresa">
+                        <div class="certificate-overlay">
+                            <h3>Mother Teresa</h3>
+                            <p class="certificate-category">Peace · 1979</p>
+                        </div>
+                    </div>
+                    <div class="certificate-plaque">
+                        <p>Saint of Kolkata<br>Humanitarian icon</p>
+                    </div>
+                </div>
+            </div>
+            <div class="certificate-item">
+                <div class="royal-certificate-frame">
+                    <div class="certificate-image">
+                        <img src="Assets/Images/Certificates/certificate-jjthomson.png" alt="J.J. Thomson's Nobel Certificate" class="certificate-img certificate-img-jjthomson">
+                        <div class="certificate-overlay">
+                            <h3>J.J. Thomson</h3>
+                            <p class="certificate-category">Physics · 1906</p>
+                        </div>
+                    </div>
+                    <div class="certificate-plaque">
+                        <p>Discovered electron<br>Atomic pioneer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Assets/Images/Icons/logo.png" alt="Company Logo">
+            </div>
+
+            <div class="footer-menu">
+                <div class="menu-section">
+                    <h3 class="menu-title">Quick Links</h3>
+                    <ul class="menu-list">
+                        <li><a href="home_page.html">Home</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-section">
+                    <h3 class="menu-title">More Pages</h3>
+                    <ul class="menu-list">
+                        <li><a href="gallery_new.html">Explore Gallery</a></li>
+                        <li><a href="detail_page_new.html?name=Albert Einstein">Explore Details</a></li>
+                        <li><a href="about_page.html">About Us</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="menu-section align-content-center">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/wikipedia/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/wikipedia?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/wikipedia/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/wikipedia-the-free-encyclopedia/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Wikipedia. All rights reserved.</p>
+            <div class="download">
+                <a href="https://play.google.com/store/apps/details?id=org.wikipedia&pcampaignid=web_share"
+                    target="_blank"> <img class="playstore" src="Assets/Images/Icons/playstore-Photoroom.png"
+                        alt="Get it on Google Play"></a>
+                <a href="https://apps.apple.com/us/app/wikipedia/id324715238" target="_blank"> <img class="appstore"
+                        src="Assets/Images/Icons/appstore-Photoroom.png" alt="Download on the App Store"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Assets/Javascript/gallery.js"></script>
+</body>
+
+</html>

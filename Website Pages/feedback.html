@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nobel Laureates Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/CSS/feedback.css">
+</head>
+
+<body>
+
+    <div class="announcement-bar">
+        <span>Grand Opening - Explore our stories of greatness</span>
+    </div>
+
+    <div class="fullheader">
+        <div class="header-wrapper">
+            <div class="header">
+                <div class="quote-container">
+                    <div class="quote active">The World's Most Prestigious Award for Excellence.</div>
+                    <div class="quote next">Celebrating brilliance that reshapes the world since 1901.</div>
+                </div>
+                <div class="logo">
+                    <img src="Assets/Images/Icons/logo.png" alt="Logo" />
+                </div>
+                <div class="account-icon">
+                    <img src="Assets/Images/Icons/user.png" alt="Account Icon" />
+                </div>
+                <button class="sidebar-toggle" onclick="toggleSidebar(this)">
+                    <div class="hamburger">
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="home_page.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" onclick="opendropdown()">Laureates</a>
+                    <div class="dropdown-content" id="dropdown-content">
+                        <a href="detail_page_new.html?name=Albert Einstein">Albert Einstein</a>
+                        <a href="detail_page_new.html?name=Marie Skłodowska Curie">Marie Curie</a>
+                        <a href="detail_page_new.html?name=John Bardeen">John Bardeen</a>
+                        <a href="detail_page_new.html?name=Linus Carl Pauling">Linus Pauling</a>
+                        <a href="detail_page_new.html?name=Malala Yousafzai">Malala Yousafzai</a>
+                        <a href="detail_page_new.html?name=Nelson Rolihlahla Mandela">Nelson Mandela</a>
+                        <a href="detail_page_new.html?name=Mother Teresa">Mother Teresa</a>
+                        <a href="detail_page_new.html?name=Sir Joseph John Thomson">J.J. Thomson</a>
+                    </div>
+                </li>
+                <li><a href="gallery_new.html">Gallery</a></li>
+                <li><a href="about_page.html">About</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="mobileSidebar" class="mobile-sidebar">
+        <ul>
+            <li><a href="home_page.html">Home</a></li>
+                <li class="mobile-dropdown">
+                    <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown(this)">
+                        Laureates
+                    </div>
+                    <div class="mobile-dropdown-content">
+                        <a href="detail_page_new.html?name=Albert Einstein">Albert Einstein</a>
+                        <a href="detail_page_new.html?name=Marie Skłodowska Curie">Marie Curie</a>
+                        <a href="detail_page_new.html?name=John Bardeen">John Bardeen</a>
+                        <a href="detail_page_new.html?name=Linus Carl Pauling">Linus Pauling</a>
+                        <a href="detail_page_new.html?name=Malala Yousafzai">Malala Yousafzai</a>
+                        <a href="detail_page_new.html?name=Nelson Rolihlahla Mandela">Nelson Mandela</a>
+                        <a href="detail_page_new.html?name=Mother Teresa">Mother Teresa</a>
+                        <a href="detail_page_new.html?name=Sir Joseph John Thomson">J.J. Thomson</a>
+                    </div>
+                </li>
+                <li><a href="gallery_new.html">Gallery</a></li>
+                <li><a href="about_page.html">About</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </div> 
+
+    <section class="form-section">
+        <div class="form-container">
+            <div class="form-header">
+                <h1 data-aos="fade-up" data-aos-delay="300" class="form-title gallery-title">Share Your Brilliant Thoughts!</h1>
+                <div data-aos="fade-up" data-aos-delay="400" class="section-subheading">WE VALUE YOUR FEEDBACK TO MAKE US EVEN BETTER</div>
+                <div data-aos="fade-up" data-aos-delay="400" class="gallery-underline"></div>
+            </div>
+
+            <form id="luxuryForm" class="luxury-form">
+                <div class="rating-section">
+                    <h4  data-aos="fade-up" data-aos-delay="600" class="form-label">Rate Your Experience</h4>
+                    <div class="stars-container">
+                        <i data-aos="fade-up" data-aos-delay="950" class="fas fa-star star" data-value="1"></i>
+                        <i data-aos="fade-up" data-aos-delay="850" class="fas fa-star star" data-value="2"></i>
+                        <i data-aos="fade-up" data-aos-delay="750" class="fas fa-star star" data-value="3"></i>
+                        <i data-aos="fade-up" data-aos-delay="850" class="fas fa-star star" data-value="4"></i>
+                        <i data-aos="fade-up" data-aos-delay="950" class="fas fa-star star" data-value="5"></i>
+                    </div>
+                    <input type="hidden" name="rating" id="luxuryRating">
+                </div>
+
+                <div class="service-heading-section">
+                    <h4 data-aos="fade-up" data-aos-delay="200" class="form-label mb-4">What did you like most about our project?</h4>
+                    <input type="hidden" name="selectedService" id="selectedService">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="service-option card" data-aos="fade-up-right" data-aos-delay="300" data-service="design">
+                                <div class="card-body">
+                                    <div class="head">
+                                        <i class="fas fa-check check-icon"></i>
+                                        <i class="fas fa-paint-brush service-icon"></i>
+                                        <h5 class="service-title">Design & Aesthetics</h5>
+                                    </div>
+                                    <p class="service-description">Beautiful layouts and visual appeal</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service-option card" data-aos="fade-up" data-aos-delay="200" data-service="responsive">
+                                <div class="card-body">
+                                    <div class="head">
+                                        <i class="fas fa-check check-icon"></i>
+                                        <i class="fas fa-mobile-alt service-icon"></i>
+                                        <h5 class="service-title">Responsive Design</h5>
+                                    </div>
+                                    <p class="service-description">Perfect display on all devices</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service-option card" data-aos="fade-up-left" data-aos-delay="300" data-service="performance">
+                                <div class="card-body">
+                                    <div class="head">
+                                        <i class="fas fa-check check-icon"></i>
+                                        <i class="fas fa-bolt service-icon"></i>
+                                        <h5 class="service-title">Performance</h5>
+                                    </div>
+                                    <p class="service-description">Fast loading and smooth experience</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service-option card" data-aos="fade-up" data-aos-delay="300" data-service="code">
+                                <div class="card-body">
+                                    <div class="head">
+                                        <i class="fas fa-check check-icon"></i>
+                                        <i class="fas fa-code service-icon"></i>
+                                        <h5 class="service-title">Code Quality</h5>
+                                    </div>
+                                    <p class="service-description">Clean and efficient implementation</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service-option card" data-aos="fade-up" data-aos-delay="200" data-service="ux">
+                                <div class="card-body">
+                                    <div class="head">
+                                        <i class="fas fa-check check-icon"></i>
+                                        <i class="fas fa-user-friends service-icon"></i>
+                                        <h5 class="service-title">User Experience</h5>
+                                    </div>
+                                    <p class="service-description">Intuitive and easy to navigate</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service-option card" data-aos="fade-up" data-aos-delay="300" data-service="colors">
+                                <div class="card-body">
+                                    <div class="head">
+                                        <i class="fas fa-check check-icon"></i>
+                                        <i class="fas fa-palette service-icon"></i>
+                                        <h5 class="service-title">Color Scheme</h5>
+                                    </div>
+                                    <p class="service-description">Pleasing and professional colors</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div data-aos="fade-left" data-aos-delay="100" class="form-group card">
+                            <div class="card-body">
+                                <label class="form-label">Full Name</label>
+                                <input id="fullname" type="text" class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div data-aos="fade-left" data-aos-delay="200" class="form-group card">
+                            <div class="card-body">
+                                <label class="form-label">Email Address</label>
+                                <input id="email" type="email" class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div data-aos="fade-left" data-aos-delay="300" class="form-group card">
+                            <div class="card-body">
+                                <label class="form-label">Detailed Feedback</label>
+                                <textarea id="feedback" class="form-control" rows="6" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-5">
+                    <div id="errorMessage" class="error-message"></div>
+                    <button type="submit" class="submit-btn" onclick="submitFeedback()">Submit Excellence</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div id="successPopup" class="success-popup">
+        <div class="popup-content">
+            <i class="fas fa-check-circle"></i>
+            <h3>Thank You!</h3>
+            <p>Your feedback has been successfully submitted.</p>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Assets/Images/Icons/logo.png" alt="Company Logo">
+            </div>
+
+            <div class="footer-menu">
+                <div class="menu-section">
+                    <h3 class="menu-title">Quick Links</h3>
+                    <ul class="menu-list">
+                        <li><a href="home_page.html">Home</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-section">
+                    <h3 class="menu-title">More Pages</h3>
+                    <ul class="menu-list">
+                        <li><a href="gallery_new.html">Explore Gallery</a></li>
+                        <li><a href="detail_page_new.html?name=Albert Einstein">Explore Details</a></li>
+                        <li><a href="about_page.html">About Us</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="menu-section align-content-center">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/wikipedia/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/wikipedia?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/wikipedia/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/wikipedia-the-free-encyclopedia/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Wikipedia. All rights reserved.</p>
+            <div class="download">
+                <a href="https://play.google.com/store/apps/details?id=org.wikipedia&pcampaignid=web_share"
+                    target="_blank"> <img class="playstore" src="Assets/Images/Icons/playstore-Photoroom.png"
+                        alt="Get it on Google Play"></a>
+                <a href="https://apps.apple.com/us/app/wikipedia/id324715238" target="_blank"> <img class="appstore"
+                        src="Assets/Images/Icons/appstore-Photoroom.png" alt="Download on the App Store"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Assets/Javascript/feedback.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+
+        AOS.init({
+            duration: 1000,
+            once: false,
+            offset: 120,
+            easing: 'ease',
+        });
+
+        window.addEventListener('load', function() {
+            const formSection = document.querySelector('.form-section');
+            if (!formSection) {
+                console.error('Form section not found');
+                document.body.innerHTML += '<div style="color: red; padding: 20px;">Error: Form section not found. Please check the CSS files.</div>';
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Our Team</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cinzel+Decorative:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="Assets/CSS/about.css">
+</head>
+
+<body>
+    <div class="announcement-bar">
+        <span>Grand Opening - Explore our stories of greatness</span>
+    </div>
+    <div class="fullheader">
+        <div class="header-wrapper">
+            <div class="header">
+                <div class="quote-container">
+                    <div class="quote active">The World's Most Prestigious Award for Excellence.</div>
+                    <div class="quote next">Celebrating brilliance that reshapes the world since 1901.</div>
+                </div>
+                <div class="logo">
+                    <img src="Assets/Images/Icons/logo.png" alt="Logo" />
+                </div>
+                <div class="account-icon">
+                    <img src="Assets/Images/Icons/user.png" alt="Account Icon" />
+                </div>
+                <button class="sidebar-toggle" onclick="toggleSidebar(this)">
+                    <div class="hamburger">
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="home_page.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" onclick="opendropdown()">Laureates</a>
+                    <div class="dropdown-content" id="dropdown-content">
+                        <a href="detail_page_new.html?name=Albert Einstein">Albert Einstein</a>
+                        <a href="detail_page_new.html?name=Marie Skłodowska Curie">Marie Curie</a>
+                        <a href="detail_page_new.html?name=John Bardeen">John Bardeen</a>
+                        <a href="detail_page_new.html?name=Linus Carl Pauling">Linus Pauling</a>
+                        <a href="detail_page_new.html?name=Malala Yousafzai">Malala Yousafzai</a>
+                        <a href="detail_page_new.html?name=Nelson Rolihlahla Mandela">Nelson Mandela</a>
+                        <a href="detail_page_new.html?name=Mother Teresa">Mother Teresa</a>
+                        <a href="detail_page_new.html?name=Sir Joseph John Thomson">J.J. Thomson</a>
+                    </div>
+                </li>
+                <li><a href="gallery_new.html">Gallery</a></li>
+                <li><a href="about_page.html">About</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="mobileSidebar" class="mobile-sidebar">
+        <ul>
+            <li><a href="home_page.html">Home</a></li>
+            <li class="mobile-dropdown">
+                <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown(this)">
+                    Laureates
+                </div>
+                <div class="mobile-dropdown-content">
+                    <a href="detail_page_new.html?name=Albert Einstein">Albert Einstein</a>
+                    <a href="detail_page_new.html?name=Marie Skłodowska Curie">Marie Curie</a>
+                    <a href="detail_page_new.html?name=John Bardeen">John Bardeen</a>
+                    <a href="detail_page_new.html?name=Linus Carl Pauling">Linus Pauling</a>
+                    <a href="detail_page_new.html?name=Malala Yousafzai">Malala Yousafzai</a>
+                    <a href="detail_page_new.html?name=Nelson Rolihlahla Mandela">Nelson Mandela</a>
+                    <a href="detail_page_new.html?name=Mother Teresa">Mother Teresa</a>
+                    <a href="detail_page_new.html?name=Sir Joseph John Thomson">J.J. Thomson</a>
+                </div>
+            </li>
+            <li><a href="gallery_new.html">Gallery</a></li>
+            <li><a href="about_page.html">About</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </div>
+
+
+    <div class="container">
+        <section class="project-section">
+            <div class="project-container">
+                <div class="project-main-content">
+                    <div class="project-logo-container">
+                        <img src="Assets/Images/Icons/logo.png" alt="Website Logo" class="project-logo">
+                    </div>
+                    <div class="project-content">
+                        <h2 class="project-title" data-aos="fade-up" data-aos-delay="200">About Our Website</h2>
+                        <p class="project-subtitle" data-aos="fade-up" data-aos-delay="300">Your Digital Gateway to Excellence</p>
+                        <p class="project-description" data-aos="fade-up" data-aos-delay="400">
+                            Our website is designed to provide a seamless and engaging experience for our users. We combine elegant design with powerful functionality to create a platform that not only looks beautiful but also delivers exceptional performance and user satisfaction.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-features">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Elegant Design</h3>
+                        <p>Modern and sophisticated interface that captivates users with its clean aesthetics</p>
+                    </div>
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Fast Performance</h3>
+                        <p>Optimized for speed and smooth user experience across all platforms</p>
+                    </div>
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Responsive</h3>
+                        <p>Perfectly adapts to all devices and screen sizes for optimal viewing</p>
+                    </div>
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Secure</h3>
+                        <p>Advanced security measures to protect user data and ensure privacy</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">Our Creative Team</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="300">The minds behind your vision</p>
+            <div id="team-grid" class="team-grid"></div>
+        </section>
+        <section class="leader-section">
+            <h2 class="leader-title">Meet Our Leader</h2>
+            <p class="leader-subtitle">Guiding Visionary</p>
+            <div class="leader-container">
+                <div class="leader-image-container">
+                    <img src="Assets/Images/team/leader1.jpeg" 
+                         alt="Team Leader" 
+                         class="leader-image">
+                </div>
+                <div class="leader-content">
+                    <h3 class="leader-name">Yusha Mirza</h3>
+                    <p class="leader-role">Team founder & lead Manager</p>
+                    <p class="leader-bio">
+                        Yusha Mirza is passionate about crafting seamless web experiences. As the Founder and Lead Developer, he specializes in creating dynamic, user-friendly solutions that combine aesthetic appeal with technical precision.
+                    </p>
+                    <button class="leader-button" data-bs-toggle="modal" data-bs-target="#founderModal">About Yusha</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Assets/Images/Icons/logo.png" alt="Company Logo">
+            </div>
+
+            <div class="footer-menu">
+                <div class="menu-section">
+                    <h3 class="menu-title">Quick Links</h3>
+                    <ul class="menu-list">
+                        <li><a href="home_page.html">Home</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-section">
+                    <h3 class="menu-title">More Pages</h3>
+                    <ul class="menu-list">
+                        <li><a href="gallery_new.html">Explore Gallery</a></li>
+                        <li><a href="detail_page_new.html?name=Albert Einstein">Explore Details</a></li>
+                        <li><a href="about_page.html">About Us</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="menu-section align-content-center">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/wikipedia/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/wikipedia?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/wikipedia/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/wikipedia-the-free-encyclopedia/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Wikipedia. All rights reserved.</p>
+            <div class="download">
+                <a href="https://play.google.com/store/apps/details?id=org.wikipedia&pcampaignid=web_share"
+                    target="_blank"> <img class="playstore" src="Assets/Images/Icons/playstore-Photoroom.png"
+                        alt="Get it on Google Play"></a>
+                <a href="https://apps.apple.com/us/app/wikipedia/id324715238" target="_blank"> <img class="appstore"
+                        src="Assets/Images/Icons/appstore-Photoroom.png" alt="Download on the App Store"></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <div class="modal fade" id="founderModal" tabindex="-1" aria-labelledby="founderModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+          <div class="modal-content border-0 rounded-4 shadow-sm" style="background-color: #ffffff;">
+      
+            <div class="modal-header border-0 pt-4 pb-2 px-4">
+              <div class="d-flex align-items-center">
+                <img src="Assets/Images/team/leader1.jpeg" alt="Yusha Mirza" class="rounded-circle me-3 shadow-sm" style="width: 60px; height: 60px; object-fit: cover;">
+                <div>
+                  <h5 class="modal-title fw-semibold mb-1 text-dark" id="founderModalLabel">Yusha Mirza</h5>
+                  <small class="text-muted">Founder & Lead Developer</small>
+                </div>
+              </div>
+            </div>
+      
+            <div class="modal-body px-4 pb-4 pt-2">
+              <p class="text-muted small mb-3">
+                Yusha Mirza is a passionate and detail-oriented developer with a strong foundation in front-end technologies. With a focus on clean design and seamless user experiences, he consistently delivers polished and efficient digital products.
+              </p>
+      
+              <ul class="list-unstyled mb-0 text-muted small">
+                <li class="mb-2"><i class="fa-solid fa-circle-check text-primary me-2"></i>Expertise in responsive UI & modern JS frameworks</li>
+                <li class="mb-2"><i class="fa-solid fa-circle-check text-primary me-2"></i>Leads development with clear vision & technical skill</li>
+                <li class="mb-2"><i class="fa-solid fa-circle-check text-primary me-2"></i>Committed to code quality, accessibility, and UX</li>
+                <li><i class="fa-solid fa-circle-check text-primary me-2"></i>Drives collaboration, innovation, and team growth</li>
+              </ul>
+            </div>
+      
+            <div class="modal-footer border-0 px-4 pb-4 pt-2">
+              <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+<script src="Assets/Javascript/about.js"></script>
+
+<script>
+
+AOS.init({
+            duration: 1000,
+            once: false,
+            offset: 120,
+            easing: 'ease',
+        });
+
+</script>
+</body>
+
+</html>

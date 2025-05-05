@@ -1,0 +1,52 @@
+{
+    "team": [
+      {
+        "name": "Yusha Mirza",
+        "role": "Functionality/Frontend",
+        "bio": "Crafting seamless user experiences with clean and efficient web functionality.",
+        "image": "Assets/Images/team/yusha.jpeg",
+        "social": {
+          "Instagram": "https://www.instagram.com/youshamirza03/",
+          "github": "https://github.com/YushaMirza"
+        }
+      },
+      {
+        "name": "Abdul Basit",
+        "role": "Frontend Developer",
+        "bio": "Creating visually appealing and user-friendly web interfaces with smooth functionality.",
+        "image": "Assets/Images/team/basit.jpg",
+        "social": {
+          "Instagram": "#",
+          "github": "#"
+        }
+      },
+      {
+        "name": "Musab Bin Umair",
+        "role": "Frontend Developer",
+        "bio": "Transforming designs into interactive and responsive web experiences.",
+        "image": "Assets/Images/team/musab.png",
+        "social": {
+          "Instagram": "https://www.instagram.com/bettercallmusab?igsh=MW8wdjQ0YTZyanNieA==",
+          "github": "https://github.com/musabbinumair-tech"
+        }
+      },
+      {
+        "name": "Awais Khan",
+        "role": "UI Component Developer",
+        "bio": "Building dynamic and reusable UI components for seamless user interactions.",
+        "image": "Assets/Images/team/awais.jpg",
+        "social": {
+          "Instagram": "https://www.instagram.com/awais.roghani.98?igsh",
+          "github": "http://GitHub.com/awaiskhan711/Pakistan"
+        }
+      }
+    ],
+    "leader": {
+      "name": "Yusha Mirza",
+      "role": "Project Director & Lead Developer",
+      "summary": [
+        "Yusha Mirza is passionate about crafting seamless web experiences. As the Founder and Lead Developer, he specializes in creating dynamic, user-friendly solutions that combine aesthetic appeal with technical precision."
+      ],
+      "image": "Assets/Images/team/leader1.jpeg"
+    }
+  } 

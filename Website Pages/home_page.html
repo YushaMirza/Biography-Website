@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nobel Prize</title>
+    <link href="/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/CSS/home_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+        <div class="announcement-bar">
+            <span>Grand Opening - Explore our stories of greatness</span>
+        </div>
+        <div class="fullheader" id="header">
+            <div class="header-wrapper">
+                <div class="header">
+                    <div class="quote-container">
+                        <div class="quote active">The World's Most Prestigious Award for Excellence.</div>
+                        <div class="quote next">Celebrating brilliance that reshapes the world since 1901.</div>
+                    </div>
+                    <div class="logo">
+                        <img src="Assets/Images/Icons/logo.png" alt="Logo" />
+                    </div>
+                    <div class="account-icon">
+                        <img src="Assets/Images/Icons/user.png" alt="Account Icon" />
+                    </div>
+                    <button class="sidebar-toggle" onclick="toggleSidebar(this)">
+                        <div class="hamburger">
+                            <div class="hamburger-line"></div>
+                            <div class="hamburger-line"></div>
+                            <div class="hamburger-line"></div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="home_page.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" onclick="opendropdown()">Laureates</a>
+                        <div class="dropdown-content" id="dropdown-content">
+                            <a href="detail_page_new.html?name=Albert Einstein">Albert Einstein</a>
+                            <a href="detail_page_new.html?name=Marie Skłodowska Curie">Marie Curie</a>
+                            <a href="detail_page_new.html?name=John Bardeen">John Bardeen</a>
+                            <a href="detail_page_new.html?name=Linus Carl Pauling">Linus Pauling</a>
+                            <a href="detail_page_new.html?name=Malala Yousafzai">Malala Yousafzai</a>
+                            <a href="detail_page_new.html?name=Nelson Rolihlahla Mandela">Nelson Mandela</a>
+                            <a href="detail_page_new.html?name=Mother Teresa">Mother Teresa</a>
+                            <a href="detail_page_new.html?name=Sir Joseph John Thomson">J.J. Thomson</a>
+                        </div>
+                    </li>
+                    <li><a href="gallery_new.html">Gallery</a></li>
+                    <li><a href="about_page.html">About</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="mobileSidebar" class="mobile-sidebar">
+            <ul>
+                <li><a href="home_page.html">Home</a></li>
+                <li class="mobile-dropdown">
+                    <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown(this)">
+                        Laureates
+                    </div>
+                    <div class="mobile-dropdown-content">
+                        <a href="detail_page_new.html?name=Albert Einstein">Albert Einstein</a>
+                        <a href="detail_page_new.html?name=Marie Skłodowska Curie">Marie Curie</a>
+                        <a href="detail_page_new.html?name=John Bardeen">John Bardeen</a>
+                        <a href="detail_page_new.html?name=Linus Carl Pauling">Linus Pauling</a>
+                        <a href="detail_page_new.html?name=Malala Yousafzai">Malala Yousafzai</a>
+                        <a href="detail_page_new.html?name=Nelson Rolihlahla Mandela">Nelson Mandela</a>
+                        <a href="detail_page_new.html?name=Mother Teresa">Mother Teresa</a>
+                        <a href="detail_page_new.html?name=Sir Joseph John Thomson">J.J. Thomson</a>
+                    </div>
+                </li>
+                <li><a href="gallery_new.html">Gallery</a></li>
+                <li><a href="about_page.html">About</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+        <main>
+            <section class="hero">
+                <div class="container-fluid h-100">
+                    <div class="hero-content">
+                        <div class="hero-image-container">
+                            <img src="Assets/Images/Cover Image/laurel wreath1.png" alt="Laurel Wreath"
+                                class="img-fluid" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                            <div class="hero-text">
+                                <p class="welcome" data-aos="fade-up" data-aos-delay="400">WELCOME</p>
+                                <p class="nobel-prize" data-aos="fade-up" data-aos-delay="600">NOBEL PRIZE</p>
+                                <p class="detail" data-aos="fade-up" data-aos-delay="800">Celebrating brilliance that
+                                    reshapes the world since 1901.</p>
+                                <button class="btn btn-primary" data-aos="fade-up" data-aos-delay="1000"><a
+                                        href="#featured"> Explore Laureates</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="intro">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>Since 1901, the Nobel Prize has recognized individuals and organizations that have made
+                                groundbreaking contributions to humanity in the fields of Science, Literature, Peace,
+                                and more. These prestigious awards celebrate the power of knowledge, innovation, and
+                                perseverance in shaping a better world.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="featured" class="featured">&nbsp;</section>
+        </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Assets/Images/Icons/logo.png" alt="Company Logo">
+            </div>
+
+            <div class="footer-menu">
+                <div class="menu-section">
+                    <h3 class="menu-title">Quick Links</h3>
+                    <ul class="menu-list">
+                        <li><a href="home_page.html">Home</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-section">
+                    <h3 class="menu-title">More Pages</h3>
+                    <ul class="menu-list">
+                        <li><a href="gallery_new.html">Explore Gallery</a></li>
+                        <li><a href="detail_page_new.html?name=Albert Einstein">Explore Details</a></li>
+                        <li><a href="about_page.html">About Us</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="menu-section align-content-center">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/wikipedia/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/wikipedia?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/wikipedia/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/wikipedia-the-free-encyclopedia/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Wikipedia. All rights reserved.</p>
+            <div class="download">
+                <a href="https://play.google.com/store/apps/details?id=org.wikipedia&pcampaignid=web_share"
+                    target="_blank"> <img class="playstore" src="Assets/Images/Icons/playstore-Photoroom.png"
+                        alt="Get it on Google Play"></a>
+                <a href="https://apps.apple.com/us/app/wikipedia/id324715238" target="_blank"> <img class="appstore"
+                        src="Assets/Images/Icons/appstore-Photoroom.png" alt="Download on the App Store"></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <div class="overlay" id="overlay"></div>
+    <div class="nobel-popup" id="nobel-popup"></div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="/JQuery/jquery-3.7.1.min.js"></script>
+    <script src="Assets/Javascript/home_page.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: false,
+            offset: 120,
+            easing: 'ease',
+        });
+
+    </script>
+</body>
+
+</html>
