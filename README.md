@@ -7,9 +7,9 @@ A responsive web application that displays biographies of Nobel Prize laureates,
 - HTML5  
 - CSS3  
 - JavaScript  
-- Bootstrap  
+- Bootstrap
+- JQuery  
 - JSON  
-- Local Storage
 
 ## ✨ Features
 
@@ -21,7 +21,7 @@ A responsive web application that displays biographies of Nobel Prize laureates,
 ## 📁 How to Run
 
 1. Clone the repository  
-2. Open `index.html` in your browser  
+2. Open `index.html` in VS Code / OR any Code Editor
 *(No server setup needed)*
 
 ## 📬 Contact
