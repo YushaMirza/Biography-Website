@@ -717,6 +717,12 @@
     }
 }
 
+@media (min-width: 992px) {
+    aside.profile-nav {
+    top: 5rem !important;
+}
+}
+
 @media (max-width: 992px) {
 
     .profile-nav {
