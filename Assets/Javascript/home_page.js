@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     $(document).ready(function () {
     $.ajax({
-        url: "../Website Pages/Assets/Json/home_page.json",
+        url: "Assets/Json/home_page.json",
         type: "GET",
         success: function (data) {
             let featured = "";
@@ -249,7 +249,7 @@ function submitFeedback() {
 
 function showScientistModal(scientist) {
     $.ajax({
-        url: "../Website Pages/Assets/Json/summary.json",
+        url: "../Assets/Json/summary.json",
         type: "GET",
         success: function (data) {
             const scientistData = data.laureates.find(item => 

@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const scientistName = decodeURIComponent(urlParams.get('name')) || 'Albert Einstein';
 const page = document.getElementById('page');
 
-fetch('../Website Pages/Assets/Json/detail_page.json')
+fetch('../Assets/Json/detail_page.json')
     .then(response => response.json())
     .then(data => {
         const scientist = data.detail.find(item => item.Fullname === scientistName);
@@ -40,7 +40,7 @@ fetch('../Website Pages/Assets/Json/detail_page.json')
             </div>
             <nav class="navbar">
                 <ul>
-                    <li><a href="home_page.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li class="dropdown">
                         <a href="#" onclick="opendropdown()">Laureates</a>
                         <div class="dropdown-content" id="dropdown-content">
@@ -64,7 +64,7 @@ fetch('../Website Pages/Assets/Json/detail_page.json')
     <!-- Mobile Sidebar -->
     <div id="mobileSidebar" class="mobile-sidebar">
         <ul>
-            <li><a href="home_page.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li class="mobile-dropdown">
                 <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown(this)">
                     Laureates
@@ -531,7 +531,7 @@ fetch('../Website Pages/Assets/Json/detail_page.json')
                 <div class="menu-section">
                     <h3 class="menu-title">Quick Links</h3>
                     <ul class="menu-list">
-                        <li><a href="home_page.html">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="feedback.html">Feedback</a></li>
                     </ul>
                 </div>

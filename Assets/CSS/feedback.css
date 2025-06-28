@@ -1126,7 +1126,7 @@ body {
 
 .footer {
     background: linear-gradient(var(--dark-bg), var(--dark-bg)), 
-                url('/Website Pages/Assets/Images/Cover Image/background1.png');
+                url('/Assets/Images/Cover Image/background1.png');
     background-size: cover;
     background-position: center;
     color: var(--accent-color);
@@ -1452,7 +1452,7 @@ body {
  
  .footer {
     background: linear-gradient(var(--dark-bg), var(--dark-bg)), 
-                url('/Website Pages/Assets/Images/Cover Image/background1.png');
+                url('/Assets/Images/Cover Image/background1.png');
     background-size: cover;
     background-position: center;
     color: var(--accent-color);

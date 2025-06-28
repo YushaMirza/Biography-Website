@@ -669,12 +669,12 @@ main .featured .shorttext {
 main .featured .shortesttext {
     display: none;
 }
-main .featured .nobleContainerLeft{
+/* main .featured .nobleContainerLeft{
     height: fit-content !important;
 }
 main .featured .nobleContainerRight{
     height: fit-content !important;
-}
+} */
 
 
 main .featured {
@@ -684,10 +684,9 @@ main .featured {
     padding-top: 80px;
     padding-bottom: 50px;
 }
-main .featured .nobleContainerLeft,
-.nobleContainerRight {
+main .featured .nobleContainerLeft, .nobleContainerRight {
     display: flex;
-    height: 60vh;
+    height: 28rem;
 }
 main .featured .nobleContainerLeft .left {
     height: 90%;
@@ -874,7 +873,7 @@ main .featured .nobleContainerRight .left .btnRightBottom:hover {
 
 .footer {
     background: linear-gradient(var(--dark-bg), var(--dark-bg)), 
-                url('/Website Pages/Assets/Images/Cover Image/background1.png');
+                url('/Assets/Images/Cover Image/background1.png');
     background-size: cover;
     background-position: center;
     color: var(--accent-color);
@@ -1357,10 +1356,10 @@ main .featured .nobleContainerRight .left .btnRightBottom:hover {
         height: 65vh !important;
     }
     .hero .welcome {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     .hero .nobel-prize {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }
     .hero .detail {
         font-size: 0.7rem;
@@ -1372,7 +1371,7 @@ main .featured .nobleContainerRight .left .btnRightBottom:hover {
             width: 65% ;
         }
         main .featured .nobleContainerLeft .left {
-            height: 26.1rem !important;
+            height: 24.6rem !important;
         }
         main .featured .nobleContainerLeft .left .detail .bottomText {
             margin: 25px 0 29px 0 !important;
@@ -1390,14 +1389,14 @@ main .featured .nobleContainerRight .left .btnRightBottom:hover {
             left: 21vw;
         }
         main .featured .nobleContainerLeft .right {
-            height: 23.5rem !important;
+            height: 22.5rem !important;
         }
         main .featured .nobleContainerLeft .right .detail .bottomText {
             margin: 30px 0 35px 0 !important;
         }
         
         main .featured .nobleContainerRight .right {
-            height: 26.1rem !important;
+            height: 24.6rem !important;
         }
         
         main .featured .nobleContainerRight .right .detail .bottomText {
@@ -1424,16 +1423,31 @@ main .featured .nobleContainerRight .left .btnRightBottom:hover {
             margin: 1rem 9vw !important;
         }
         main .featured .nobleContainerRight .left {
-            height: 23.5rem !important;
+            height: 22.5rem !important;
         }
         main .featured .nobleContainerRight .left .detail .bottomText {
             margin: 30px 0 35px 0 !important;
         }
     }
 
+    @media (max-width: 1000px) {
+            main .featured .nobleContainerLeft .left {
+        height: 23rem;
+    }
+        main .featured .nobleContainerRight .right {
+        height: 23rem;
+    }
+    main .featured .nobleContainerLeft .right {
+        height: 21rem;
+    }
+        main .featured .nobleContainerRight .left {
+        height: 21rem;
+    }
+    }
+
     @media (min-width: 900px) {
     .hero img {
-        width: 50rem !important;
+        width: 41rem !important;
     }
 }
 
@@ -1460,10 +1474,10 @@ main .featured .nobleContainerRight .left .btnRightBottom:hover {
     }
     
     main .featured .nobleContainerLeft {
-        height: 28rem !important;
+        height: 23.8rem !important;
     }
     main .featured .nobleContainerRight {
-        height: 28rem !important;
+        height: 23.8rem !important;
     }
     
     
@@ -1561,11 +1575,11 @@ main .featured .nobleContainerRight .left .btnRightBottom:hover {
     }
     main .featured .nobleContainerRight .right {
         position: relative;
-        height: 22rem !important;
+        height: 19rem !important;
     }
     main .featured .nobleContainerLeft .left {
         position: relative;
-        height: 22rem !important;
+        height: 19rem !important;
     }
     main .featured .nobleContainerLeft .right .detail {
         margin: 2em 2.6em !important;
@@ -1630,7 +1644,7 @@ main .featured .nobleContainerRight .left .btnRightBottom:hover {
 
 @media(min-width: 800px) AND (max-width: 900px) {
     .hero img {
-        width: 49rem !important;
+        width: 39rem !important;
     }
 }
 
@@ -1678,10 +1692,10 @@ main .featured .nobleContainerRight .left .btnRightBottom:hover {
         display: block !important;
     }
     main .featured .nobleContainerLeft{
-        height: 18rem !important;
+        height: 16rem !important;
     }
     main .featured .nobleContainerRight{
-        height: 18rem !important;
+        height: 16rem !important;
     }
     main .featured .nobleContainerLeft .left {
         height: 14rem !important;
@@ -1701,17 +1715,17 @@ main .featured .nobleContainerRight .left .btnRightBottom:hover {
     }
     main .featured .nobleContainerLeft .left .btnLeft {
         height: 2.7vh;
-        width: 14vw;
+        width: 12vw;
         font-size: 1.1vh;
     }
     main .featured .nobleContainerLeft .left img {
-        width: 11rem;
+        width: 7rem;
         height: auto;
         object-fit: contain;
     }
     main .featured .nobleContainerLeft .right {
         margin: 27.8px 0;
-        height: calc(100% - 92px);
+        height: calc(100% - 67px);
         padding: 0 0px;
     }
     main .featured .nobleContainerLeft .right .detail .topText {
@@ -1754,20 +1768,26 @@ main .featured .nobleContainerRight .left .btnRightBottom:hover {
         font-size: .7rem;
         margin: 11px 0 42px 0;
     }
+        main .featured .nobleContainerLeft .right .btnRightBottom {
+        margin: 0px 0 0 80px;
+    }
+        main .featured .nobleContainerRight .left .btnRightBottom {
+        margin: 0px 0 0 80px;
+    }
     main .featured .nobleContainerRight .right .btnLeft {
         height: 2.7vh;
-        width: 14vw;
+        width: 12vw;
         font-size: 1.1vh;
         margin-left: 3.4rem;
     }
     main .featured .nobleContainerRight .right img {
-        width: 11rem;
+        width: 7rem;
         height: auto;
         object-fit: contain;
     }
     main .featured .nobleContainerRight .left {
         margin: 27.8px 0;
-        height: calc(100% - 92px);
+        height: calc(100% - 67px);
         padding: 0 0px;
     }
     main .featured .nobleContainerRight .left .detail .topText {
@@ -1855,7 +1875,7 @@ main .featured .nobleContainerRight .left .btnRightBottom:hover {
     }
     main .featured .nobleContainerLeft .left .btnLeft {
         height: 2.7vh !important;
-        width: 4.5rem !important;
+        width: 3.5rem !important;
         font-size: 1vh !important;;
     }
     main .featured .nobleContainerLeft .left img {
@@ -1866,7 +1886,7 @@ main .featured .nobleContainerRight .left .btnRightBottom:hover {
     }
     main .featured .nobleContainerLeft .right {
         margin: 27.8px 0;
-        height: calc(100% - 115px);
+        height: calc(100% - 97px);
         padding: 0 0px;
     }
     main .featured .nobleContainerLeft .right .detail .topText {
@@ -1913,9 +1933,9 @@ main .featured .nobleContainerRight .left .btnRightBottom:hover {
         line-height: 1.7;
     }
     main .featured .nobleContainerRight .right .btnLeft {
-        height: 2.7vh;
-        width: 4.5rem;
-        font-size: 1vh;
+        height: 2.7vh !important;
+        width: 3.5rem !important;
+        font-size: 1vh !important;
         margin-left: 3rem;
     }
     main .featured .nobleContainerRight .right img {
@@ -1926,7 +1946,7 @@ main .featured .nobleContainerRight .left .btnRightBottom:hover {
     }
     main .featured .nobleContainerRight .left {
         margin: 27.8px 0;
-        height: calc(100% - 115px);
+        height: calc(100% - 97px);
         padding: 0 0px;
     }
     main .featured .nobleContainerRight .left .detail .topText {
@@ -1978,6 +1998,23 @@ main .featured .nobleContainerRight .left .btnRightBottom:hover {
     }
 }
 @media(max-width:500px){
+
+    
+    main .featured .nobleContainerRight .right .btnLeft {
+        width: 3.5rem !important;
+    }
+
+        main .featured .nobleContainerLeft .left .btnLeft {
+        width: 3.5rem !important;
+    }
+
+    main .featured .nobleContainerRight .left .btnRightBottom {
+        margin: 0px 0 0 132px;
+    }
+
+    main .featured .nobleContainerLeft .right .btnRightBottom {
+        margin: 0px 0 0 132px;
+    }
 
     .logo {
         position: absolute;

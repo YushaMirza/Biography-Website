@@ -4,7 +4,7 @@
         "name": "Albert Einstein",
         "fullname": "Albert Einstein",
         "year": "1921",
-        "image": "../Website Pages/Assets/Images/homepage-pic/albert.png",
+        "image": "../Assets/Images/homepage-pic/albert.png",
         "summary": "Albert Einstein (14 March 1879 – 18 April 1955) was a German-born theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics. His work is also known for its influence on the philosophy of science. He received the 1921 Nobel Prize in Physics for his explanation of the photoelectric effect.",
         "facts": [
           "Awarded the Nobel Prize in Physics (1921)",
@@ -16,7 +16,7 @@
         "articles": [
           {
             "title": "On the Electrodynamics of Moving Bodies",
-            "pdf": "../Website Pages/Assets/document/Albert Einstein Article.pdf",
+            "pdf": "../Assets/document/Albert Einstein Article.pdf",
             "year": "1905"
           }
         ]
@@ -25,7 +25,7 @@
         "name": "Marie Curie",
         "fullname": "Marie Skłodowska Curie",
         "year": "1903",
-        "image": "../Website Pages/Assets/Images/homepage-pic/marie.png",
+        "image": "../Assets/Images/homepage-pic/marie.png",
         "summary": "Marie Curie (born Maria Salomea Skłodowska; 7 November 1867 - 4 July 1934) was a Polish and naturalized-French physicist and chemist who conducted pioneering research on radioactivity. She was the first woman to win a Nobel Prize, the first person and only woman to win the Nobel Prize twice, and the only person to win the Nobel Prize in two scientific fields.",
         "facts": [
           "First woman to win a Nobel Prize (Physics, 1903)",
@@ -37,7 +37,7 @@
         "articles": [
           {
             "title": "Radium and Radioactivity",
-            "pdf": "../Website Pages/Assets/document/Marie Curie Article.pdf",
+            "pdf": "../Assets/document/Marie Curie Article.pdf",
             "year": "1904"
           }
         ]
@@ -46,7 +46,7 @@
         "name": "John Bardeen",
         "fullname": "John Bardeen",
         "year": "1956",
-        "image": "../Website Pages/Assets/Images/homepage-pic/john.png",
+        "image": "../Assets/Images/homepage-pic/john.png",
         "summary": "John Bardeen (23 May 1908 – 30 January 1991) was an American physicist and electrical engineer. He was the only person to win the Nobel Prize in Physics twice: first in 1956 for the invention of the transistor, and again in 1972 for the theory of superconductivity.",
         "facts": [
           "Co-invented the transistor (Nobel Prize in Physics, 1956)",
@@ -58,7 +58,7 @@
         "articles": [
           {
             "title": "Theory of Superconductivity",
-            "pdf": "../Website Pages/Assets/document/John Bardeen Article.pdf",
+            "pdf": "../Assets/document/John Bardeen Article.pdf",
             "year": "1957"
           }
         ]
@@ -67,7 +67,7 @@
         "name": "Linus Pauling",
         "fullname": "Linus Carl Pauling",
         "year": "1954",
-        "image": "../Website Pages/Assets/Images/homepage-pic/linus.png",
+        "image": "../Assets/Images/homepage-pic/linus.png",
         "summary": "Linus Pauling (28 February 1901 – 19 August 1994) was an American chemist, biochemist, and peace activist. He was awarded the Nobel Prize in Chemistry in 1954 for his research into the nature of the chemical bond and its application to the elucidation of the structure of complex substances, and later won the Nobel Peace Prize in 1962 for his activism against nuclear weapons testing.",
         "facts": [
           "Awarded the Nobel Prize in Chemistry (1954)",
@@ -79,7 +79,7 @@
         "articles": [
           {
             "title": "The Nature of the Chemical Bond",
-            "pdf": "../Website Pages/Assets/document/Linus Pauling Article.pdf",
+            "pdf": "../Assets/document/Linus Pauling Article.pdf",
             "year": "1939"
           }
         ]
@@ -88,7 +88,7 @@
         "name": "Malala Yousafzai",
         "fullname": "Malala Yousafzai",
         "year": "2014",
-        "image": "../Website Pages/Assets/Images/homepage-pic/malala.png",
+        "image": "../Assets/Images/homepage-pic/malala.png",
         "summary": "Malala Yousafzai (born 12 July 1997) is a Pakistani education activist and the youngest-ever Nobel Prize laureate. She received the Nobel Peace Prize in 2014 for her struggle against the suppression of children and young people and for the right of all children to education.",
         "facts": [
           "Youngest-ever Nobel Prize laureate (Peace, 2014)",
@@ -100,7 +100,7 @@
         "articles": [
           {
             "title": "We Are Displaced",
-            "pdf": "../Website Pages/Assets/document/Malala Yousafzai Article.pdf",
+            "pdf": "../Assets/document/Malala Yousafzai Article.pdf",
             "year": "2019"
           }
         ]
@@ -109,7 +109,7 @@
         "name": "Nelson Mandela",
         "fullname": "Nelson Rolihlahla Mandela",
         "year": "1993",
-        "image": "../Website Pages/Assets/Images/homepage-pic/nelson.png",
+        "image": "../Assets/Images/homepage-pic/nelson.png",
         "summary": "Nelson Mandela (18 July 1918 – 5 December 2013) was a South African anti-apartheid revolutionary and political leader who served as President of South Africa from 1994 to 1999. He was awarded the Nobel Peace Prize in 1993 for his efforts to dismantle the apartheid regime and establish multiracial elections.",
         "facts": [
           "First black President of South Africa",
@@ -121,7 +121,7 @@
         "articles": [
           {
             "title": "Long Walk to Freedom",
-            "pdf": "../Website Pages/Assets/document/Nelson Mandela Article.pdf",
+            "pdf": "../Assets/document/Nelson Mandela Article.pdf",
             "year": "1994"
           }
         ]
@@ -130,7 +130,7 @@
         "name": "Mother Teresa",
         "fullname": "Mother Teresa",
         "year": "1979",
-        "image": "../Website Pages/Assets/Images/homepage-pic/teresa.png",
+        "image": "../Assets/Images/homepage-pic/teresa.png",
         "summary": "Mother Teresa (26 August 1910 – 5 September 1997), born Anjezë Gonxhe Bojaxhiu, was an Albanian-Indian Roman Catholic nun and missionary. She was awarded the Nobel Peace Prize in 1979 for her humanitarian work with the poor and dying in Kolkata (Calcutta), India.",
         "facts": [
           "Founded the Missionaries of Charity",
@@ -142,7 +142,7 @@
         "articles": [
           {
             "title": "A Simple Path",
-            "pdf": "../Website Pages/Assets/document/Mother Teresa Article.pdf",
+            "pdf": "../Assets/document/Mother Teresa Article.pdf",
             "year": "1995"
           }
         ]
@@ -151,7 +151,7 @@
         "name": "J.J. Thomson",
         "fullname": "Sir Joseph John Thomson",
         "year": "1906",
-        "image": "../Website Pages/Assets/Images/homepage-pic/jjthomson.png",
+        "image": "../Assets/Images/homepage-pic/jjthomson.png",
         "summary": "J.J. Thomson (18 December 1856 – 30 August 1940) was an English physicist and Nobel laureate in Physics in 1906 for his discovery of the electron and for his work on the conduction of electricity in gases.",
         "facts": [
           "Discovered the electron (1897)",
@@ -163,7 +163,7 @@
         "articles": [
           {
             "title": "On the Structure of the Atom",
-            "pdf": "../Website Pages/Assets/document/J. J. Thomson Article.pdf",
+            "pdf": "../Assets/document/J. J. Thomson Article.pdf",
             "year": "1906"
           }
         ]
