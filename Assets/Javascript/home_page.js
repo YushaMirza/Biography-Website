@@ -249,7 +249,7 @@ function submitFeedback() {
 
 function showScientistModal(scientist) {
     $.ajax({
-        url: "../Assets/Json/summary.json",
+        url: "Assets/Json/summary.json",
         type: "GET",
         success: function (data) {
             const scientistData = data.laureates.find(item => 

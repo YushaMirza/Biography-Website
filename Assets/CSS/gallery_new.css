@@ -505,7 +505,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('/Assets/Images/Cover Image/hero-background.jpg') no-repeat center center/cover;
+    background: url('../Images/Cover_Image/hero-background.jpg') no-repeat center center/cover;
     z-index: 1;
 }
 
@@ -1008,7 +1008,7 @@ body {
 
 .footer {
     background: linear-gradient(var(--dark-bg), var(--dark-bg)), 
-                url('/Assets/Images/Cover Image/background1.png');
+                url('../Images/Cover_Image/background1.png');
     background-size: cover;
     background-position: center;
     color: var(--accent-color);

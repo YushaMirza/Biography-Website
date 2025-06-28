@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const scientistName = decodeURIComponent(urlParams.get('name')) || 'Albert Einstein';
 const page = document.getElementById('page');
 
-fetch('../Assets/Json/detail_page.json')
+fetch('Assets/Json/detail_page.json')
     .then(response => response.json())
     .then(data => {
         const scientist = data.detail.find(item => item.Fullname === scientistName);
@@ -584,7 +584,7 @@ fetch('../Assets/Json/detail_page.json')
         <div class="feedback-Popup shadow-lg p-4 rounded" id="feedbackPopup">
             <span class="close-btn position-absolute top-0 end-0 m-2 fs-4" onclick="closeFeedbackPopup()">&times;</span>
             <div class="mb-3">
-                <img src="Assets/Images/Cover Image/laurel wreath1.png" alt="Logo" class="img-fluid rounded-circle"
+                <img src="Assets/Images/Cover_Image/laurel wreath1.png" alt="Logo" class="img-fluid rounded-circle"
                     width="100" height="100">
             </div>
             <h2 class="fw-bold">We value your feedback</h2>
