@@ -1977,7 +1977,7 @@ main .featured .nobleContainerRight .left .btnRightBottom:hover {
 
     
     .hero .btn-primary a {
-        font-size: .3rem !important;
+        font-size: .45rem !important;
     }
 }
 @media(min-width: 500px) and (max-width: 570px){
@@ -2107,7 +2107,7 @@ main .featured .nobleContainerRight .left .btnRightBottom:hover {
     }
 
     .hero .btn-primary {
-        padding: 4px 10px;
+        padding: 6px 12px;
         font-size: 0.3rem;
     }
     
