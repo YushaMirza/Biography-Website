@@ -2,12 +2,14 @@
 
 A responsive web application that displays biographies of Nobel Prize laureates, categorized by fields such as Peace, Physics, Literature, and more.
 
+🔗 **Live Site:** [https://thelaureates.netlify.app](https://thelaureates.netlify.app)
+
 ## 🛠️ Technologies Used
 
 - HTML5  
 - CSS3  
 - JavaScript  
-- Bootstrap
+- Bootstrap  
 - JQuery  
 - JSON  
 
@@ -21,7 +23,7 @@ A responsive web application that displays biographies of Nobel Prize laureates,
 ## 📁 How to Run
 
 1. Clone the repository  
-2. Open `index.html` in VS Code / OR any Code Editor
+2. Open `index.html` in VS Code / OR any Code Editor  
 *(No server setup needed)*
 
 ## 📬 Contact
